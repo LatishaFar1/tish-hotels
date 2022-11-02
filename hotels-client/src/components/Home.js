@@ -1,10 +1,15 @@
 import React from 'react'
+import Header from './Header'
 import NavBar from './NavBar'
+import Hotels from './Hotels'
+
 
 function Home() {
   return (
-    <div>
+    <div className='home'>
       <NavBar/>
+      <Header/>
+      <Hotels />
 
 
     </div>
