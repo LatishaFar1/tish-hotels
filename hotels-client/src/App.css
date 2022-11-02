@@ -10,13 +10,26 @@
   background-color: #333533;
   justify-content: center;
   display: flex;
-  color: #E8EDDF;
+  color: #333533;
 }
 
 .NavbarContainer{
   background-color: #CFDBD5;
   width: 100%;
   max-width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.NavButton{
+  margin: 10px;
+  background-color: #242423;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 5px 10px;
+  color: #CFDBD5;
 }
 
 /* HOME */
