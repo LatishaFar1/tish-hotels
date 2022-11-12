@@ -24,6 +24,8 @@ function Header() {
     }
   })
 
+  const [open, setOpen] = useState(false)
+
   return (
     <div className='header'>
         <div className='HeaderContainer'>
@@ -37,17 +39,21 @@ function Header() {
               <div className='SearchBox'>
                 <BiBed className='SearchIcon'/>
                 <input type='text' className='SearchInput' placeholder="let's plan a trip!" />
-                <AiOutlineCalendar className='SearchIcon' />
-                      <DateRangePicker
-                        className='calendar'
-                        onChange={item => setDate({ ...date, ...item })}
-                        months={1}
-                        minDate={addDays(new Date(), -300)}
-                        maxDate={addDays(new Date(), 900)}
-                        direction="vertical"
-                        scroll={{ enabled: true }}
-                        ranges={[date.selection, date.compare]}
-                      />;
+                    <div className='CalendarBox' >
+                     <AiOutlineCalendar className='SearchIcon' />
+                      <span onClick={()=> setOpen(!open)}> Month, Date, Year </span>
+                          {open && (
+                          <DateRangePicker
+                            className='calendar'
+                            onChange={item => setDate({ ...date, ...item })}
+                            months={1}
+                            minDate={addDays(new Date(), -300)}
+                            maxDate={addDays(new Date(), 900)}
+                            direction="vertical"
+                            scroll={{ enabled: true }}
+                            ranges={[date.selection, date.compare]}
+                          /> )}
+                      </div>
                 <input type='text' className='SearchInput' placeholder='when are we going?' />
                 <button className='SearchButton'>Search</button>
               </div>
