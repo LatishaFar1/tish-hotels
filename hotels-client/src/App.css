@@ -36,6 +36,7 @@
   color: #CFDBD5;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .HeaderContainer{
@@ -49,6 +50,47 @@
   display: flex;
   gap: 40px;
 }
+
+/* SEARCH */
+    .SearchIcon{
+      color: #333533;
+    }
+    .Search{
+      background-color: #E8EDDF;
+      border: 5px solid #F5CB5C;
+      border-radius: 5px;
+      height: 40px;
+      width: 100%;
+      display: flex;
+      padding: 10px;
+      align-items: center;
+      justify-content: space-around;
+      position: absolute;
+      bottom: -25px;
+      max-width: 1000px;
+    }
+
+    .SearchButton{
+      margin: 10px;
+      background-color: #F5CB5C;
+      border: none;
+      border-radius: 5px;
+      font-size: 15px;
+      padding: 5px 10px;
+      color: #242423;
+    }
+
+    .SearchInput{
+      border: none;
+    }
+
+    .calendar{
+      position: absolute;
+      top: 50px;
+      
+    }
+
+
 /* HOME */
 
 
