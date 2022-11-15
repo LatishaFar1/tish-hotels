@@ -22,13 +22,21 @@
 }
 
 .NavButton{
-  margin: 10px;
+  /* margin: 10px;
   background-color: #242423;
   border: none;
   border-radius: 5px;
   font-size: 15px;
   padding: 5px 10px;
-  color: #CFDBD5;
+  color: #CFDBD5; */
+
+  margin: 10px;
+  background-color: #F5CB5C;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 5px 10px;
+  color: #242423;
 }
 
 /* HEADER */
@@ -115,3 +123,28 @@
 
 
 /* HOTEL DETAILS */
+
+
+
+
+
+/* FOOTER */
+
+.Footer{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+.Footer > p{
+  text-align: center;
+}
+
+
+
+ul{
+  list-style: none;
+  color: #333533;
+  background-color: #E8EDDF;
+  text-align: center;
+}
+

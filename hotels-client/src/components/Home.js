@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './Header'
 import NavBar from './NavBar'
 import Hotels from './Hotels'
+import Footer from './Footer'
 
 
 function Home() {
@@ -10,6 +11,8 @@ function Home() {
       <NavBar/>
       <Header/>
       <Hotels />
+
+      <Footer/>
 
 
     </div>
