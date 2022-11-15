@@ -38,10 +38,10 @@ function Header() {
             <div className='Search'>
               <div className='SearchBox'>
                 <BiBed className='SearchIcon'/>
-                <input type='text' className='SearchInput' placeholder="let's plan a trip!" />
+                <input type='text' className='SearchInput' placeholder="where's your next trip?" />
                     <div className='CalendarBox' >
                      <AiOutlineCalendar className='SearchIcon' />
-                      <span onClick={()=> setOpen(!open)}> Month, Date, Year </span>
+                      <span className='DateTemp' onClick={()=> setOpen(!open)}> Month, Date, Year </span>
                           {open && (
                           <DateRangePicker
                             className='calendar'
@@ -54,7 +54,7 @@ function Header() {
                             ranges={[date.selection, date.compare]}
                           /> )}
                       </div>
-                <input type='text' className='SearchInput' placeholder='when are we going?' />
+                <input type='text' className='SearchInput' placeholder='when are you going?' />
                 <button className='SearchButton'>Search</button>
               </div>
             </div>

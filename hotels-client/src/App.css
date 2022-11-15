@@ -1,4 +1,6 @@
-
+*{
+  font-family:Arial, Helvetica, sans-serif;
+}
 
 /* NAVBAR */
 
@@ -64,10 +66,18 @@
       display: flex;
       padding: 10px;
       align-items: center;
-      justify-content: space-around;
       position: absolute;
       bottom: -25px;
       max-width: 1000px;
+    }
+
+    .SearchBox{
+      width: 100%;
+      max-width: 1000px;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
     }
 
     .SearchButton{
@@ -82,12 +92,17 @@
 
     .SearchInput{
       border: none;
+      background-color: #E8EDDF;
     }
 
     .calendar{
       position: absolute;
       top: 50px;
       
+    }
+
+    .DateTemp{
+      color:#242423;  
     }
 
 
